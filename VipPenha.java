@@ -98,11 +98,11 @@ public class VipPenha {
         System.out.printf("Contribuição estimada: R$ %.2f/mês%n", r.z);
         String[] labels = {"Implantação", "Suporte", "Capacidade comercial"};
         for (int i = 0; i < r.slack.length; i++)
-            System.out.printf("Folga - %s: %.2f unidades%n", labels[i], r.slack[i]);
+            System.out.printf("Folga: %s: %.2f unidades%n", labels[i], r.slack[i]);
     }
 
     public static void main(String[] args) {
-        runScenario("\nCENÁRIO A - recursos planejados", 160.0, 90.0);
-        runScenario("\nCENÁRIO B - redução de 25% nas horas de implantação", 120.0, 90.0);
+        runScenario("CENÁRIO A: recursos planejados", 160.0, 90.0);
+        runScenario("\nCENÁRIO B: redução de 25% nas horas de implantação", 120.0, 90.0);
     }
 }
